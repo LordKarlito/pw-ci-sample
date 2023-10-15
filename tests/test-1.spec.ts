@@ -5,7 +5,7 @@ test('test', async ({ page }) => {
   await page.getByPlaceholder('Search by product name or search by image').click();
   await page.getByPlaceholder('Search by product name or search by image').fill('xbox');
   await page.getByPlaceholder('Search by product name or search by image').press('Enter');
-  await page.getByRole('img', { name: 'Xbox Wireless Controller Mineral Camo Special Editio' }).click();
+  await page.getByRole('img', { name: 'Xbox Wireless Controller Mineral Camo Special Edition' }).click();
   await page.getByRole('button', { name: '+' }).dblclick();
   await page.getByRole('button', { name: 'Add To Bag' }).click();
   await page.getByLabel('cart').click();
